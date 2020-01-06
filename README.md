@@ -53,7 +53,7 @@ Tsc_fin =<br>
 
 The corresponding six elements of end-effector error twist along with time are:
 1. KP = 1.5, KI = 0<br>
-![](/results/best/kp=15ki = 5.png)
+![](/results/best/BEST.png)
 2. KP = 30, KI = 10<br>
 ![](/results/newTask/newTask.png)
 
