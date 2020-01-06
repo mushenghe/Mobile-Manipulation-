@@ -1,11 +1,11 @@
-# Mobile-Manipulation-
+# Mobile Manipulation
 ME-449 Capstone Project: YouBot KUKA Manipulation. 
 
 ## Project Description:
 
-###### This is the final project of course [ME-449 Robotic Manipulation](http://hades.mech.northwestern.edu/index.php/ME_449_Robotic_Manipulation) at Northwestern University. This is also the capstone Project for the Coursera "Modern Robotics" specialization. The detailed project description can be find [here](http://hades.mech.northwestern.edu/index.php/Mobile_Manipulation_Capstone#Milestone_1:_youBot_Kinematics_Simulator_and_csv_Output)
+This is the final project of course [ME-449 Robotic Manipulation](http://hades.mech.northwestern.edu/index.php/ME_449_Robotic_Manipulation) at Northwestern University. This is also the capstone Project for the Coursera "Modern Robotics" specialization. The detailed project description can be find [here](http://hades.mech.northwestern.edu/index.php/Mobile_Manipulation_Capstone#Milestone_1:_youBot_Kinematics_Simulator_and_csv_Output)
 
-###### The goal of this project is to drive the KUKA youBot to pick up a block at the start location, carry it to the desired location, and put it down in the simulation software V-REP. The project covers the following topics:<br>
+The goal of this project is to drive the KUKA youBot to pick up a block at the start location, carry it to the desired location, and put it down in the simulation software V-REP. The project covers the following topics:<br>
 1. Plan a trajectory for the end-effector of the youBot mobile manipulator<br>
 2. Generate the kinematics model of the youBot, consisting of the mobile base with 4 mecanum wheels and the robot arm with 5 joints<br>
 3. Apply feedback control to drive the robot to implement the desired task<br>
@@ -25,26 +25,30 @@ ME-449 Capstone Project: YouBot KUKA Manipulation.
 ## Result:
 
 1. when the initial configuration for the cube is:<br>
-Tsc_ini = np.array([[1, 0, 0,     1],<br>
-                    [0, 1, 0,     0],<br>
-                    [0, 0, 1, 0.025],<br>
-                    [0, 0, 0,     1]])<br>
+Tsc_ini = 
+[1, 0, 0,     1],<br>
+[0, 1, 0,     0],<br>
+[0, 0, 1, 0.025],<br>
+[0, 0, 0,     1]])<br>
 The goal configuration for the cube is:<br>
-Tsc_fin = np.array([[ 0, 1, 0,     0],<br>
-                    [-1, 0, 0,    -1],<br>
-                    [ 0, 0, 1, 0.025],<br>
-                    [ 0, 0, 0,     1]])<br>
+Tsc_fin =
+[ 0, 1, 0,     0],<br>
+[-1, 0, 0,    -1],<br>
+[ 0, 0, 1, 0.025],<br>
+[ 0, 0, 0,     1]])<br>
 ![](/results/overshoot/overshoot.gif)
 2. when the initial configuration for the cube is:<br>
-Tsc_ini = np.array([[1, 0, 0,     1],<br>
-                    [0, 1, 0,     0.5],<br>
-                    [0, 0, 1, 0.025],<br>
-                    [0, 0, 0,     1]])<br>
+Tsc_ini = 
+[1, 0, 0,     1],<br>
+[0, 1, 0,     0.5],<br>
+[0, 0, 1, 0.025],<br>
+[0, 0, 0,     1]])<br>
 The goal configuration for the cube is:<br>
-Tsc_fin = np.array([[ 0, 1, 0,     0.2],<br>
-                    [-1, 0, 0,    -2],<br>
-                    [ 0, 0, 1, 0.025],<br>
-                    [ 0, 0, 0,     1]])<br>
-![](/results/newTask/newtask.gif.gif)
+Tsc_fin =
+[ 0, 1, 0,     0.2],<br>
+[-1, 0, 0,    -2],<br>
+[ 0, 0, 1, 0.025],<br>
+[ 0, 0, 0,     1]])<br>
+![](/results/newTask/newtask.gif)
 
 
