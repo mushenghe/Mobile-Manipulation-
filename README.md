@@ -12,43 +12,49 @@ The goal of this project is to drive the KUKA youBot to pick up a block at the s
 4. Conduct the simulations in V-REP
 
 ## Package Description:
--finalproject.zip<br>
-    • /code<br>
+##### finalproject.zip<br>
+   • /code<br>
         -full_program.py : the full program<br>
         -nextstate.py : milestone1<br>
         -traj_gen.py : milestone2<br>
         -control.py : milestone3<br>
-    • /results<br>
+   • /results<br>
         - /best<br>
         - /newTask<br>
         - /overshoot<br>
 ## Result:
 
 1. when the initial configuration for the cube is:<br>
-Tsc_ini = 
+Tsc_ini = <br>
 [1, 0, 0,     1],<br>
 [0, 1, 0,     0],<br>
 [0, 0, 1, 0.025],<br>
 [0, 0, 0,     1]])<br>
 The goal configuration for the cube is:<br>
-Tsc_fin =
+Tsc_fin =<br>
 [ 0, 1, 0,     0],<br>
 [-1, 0, 0,    -1],<br>
 [ 0, 0, 1, 0.025],<br>
 [ 0, 0, 0,     1]])<br>
 ![](/results/overshoot/overshoot.gif)
 2. when the initial configuration for the cube is:<br>
-Tsc_ini = 
+Tsc_ini = <br>
 [1, 0, 0,     1],<br>
 [0, 1, 0,     0.5],<br>
 [0, 0, 1, 0.025],<br>
 [0, 0, 0,     1]])<br>
 The goal configuration for the cube is:<br>
-Tsc_fin =
+Tsc_fin =<br>
 [ 0, 1, 0,     0.2],<br>
 [-1, 0, 0,    -2],<br>
 [ 0, 0, 1, 0.025],<br>
 [ 0, 0, 0,     1]])<br>
 ![](/results/newTask/newtask.gif)
+
+The corresponding six elements of end-effector error twist along with time are:
+1. KP = 1.5, KI = 0<br>
+![](/results/overshoot/KP1.5KI0.png.gif)
+2. KP = 30, KI = 10<br>
+![](/results/newTask/newTask.png)
 
 
